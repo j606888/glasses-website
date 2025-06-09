@@ -26,13 +26,13 @@ const customers = [
 ]
 export default function Customers() {
   return (
-    <section className="py-20 md:px-9">
-      <h2 className="text-center text-5xl font-bold mb-12 text-[#650300]">顧客推薦</h2>
-      <div className="flex justify-center max-w-7xl mx-auto gap-6 md:flex-wrap">
+    <section className="py-10 px-3 md:py-20 md:px-9 xl:px-0">
+      <h2 className="text-center text-2xl md:text-5xl font-bold mb-6 md:mb-12 text-[#650300]">顧客推薦</h2>
+      <div className="flex justify-center max-w-7xl mx-auto gap-4 md:gap-6 flex-col md:flex-row md:flex-wrap xl:flex-nowrap">
         {customers.map(customer => (
-          <div className="flex flex-col items-center w-[25%] rounded-sm shadow-[0_2px_6px_#00000029] md:w-[calc(50%-12px)]">
-            <img src={`/${customer.image}`} alt={customer.name} className="w-[306px] h-[306px] md:w-full" />
-            <div className="p-4 h-[205px] flex flex-col md:w-full">
+          <div className="flex flex-col items-center rounded-sm shadow-[0_2px_6px_#00000029] md:w-[calc(50%-12px)]">
+            <img src={`/${customer.image}`} alt={customer.name} className="w-full h-[306px] object-cover" />
+            <div className="p-4 h-[205px] flex flex-col w-full">
               <h3 className="text-base font-medium mb-2">{customer.name}</h3>
               <p className="text-sm leading-6">{customer.content}</p>
               <span className="text-sm text-[#707070] mt-auto">{customer.date}</span>

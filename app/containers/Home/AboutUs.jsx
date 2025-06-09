@@ -23,12 +23,12 @@ const items = [
 
 export default function AboutUs() {
   return (
-    <section className="bg-[#FBF2F2] py-20 md:px-9">
-      <h2 className="text-center text-5xl font-bold mb-9 text-[#650300]">用專業的心，做專業的事</h2>
-      <div className="flex justify-center gap-6 max-w-7xl mx-auto md:flex-wrap">
+    <section className="px-3 bg-[#FBF2F2] py-10 md:px-9 md:py-20 xl:px-0 ">
+      <h2 className="text-center text-2xl md:text-5xl font-bold mb-9 text-[#650300]">用專業的心，做專業的事</h2>
+      <div className="flex justify-center flex-col gap-6 max-w-7xl mx-auto  md:flex-row md:flex-wrap lg:flex-nowrap">
         {items.map((item) => (
-          <div key={item.title} className="flex flex-col items-center w-1/4 md:w-[calc(50%-12px)]">
-            <img src={`/${item.icon}`} alt={item.title} className="w-16 h-16 mb-4 md:w-25 md:h-25" />
+          <div key={item.title} className="flex flex-col items-center md:w-[calc(50%-12px)]">
+            <img src={`/${item.icon}`} alt={item.title} className="mb-6 w-25 h-25 xl:w-16 xl:h-16 xl:mb-4" />
             <h3 className="text-2xl font-bold text-[#650300] mb-2">{item.title}</h3>
             <p className="text-base ">{item.description}</p>
 
