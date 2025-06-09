@@ -1,0 +1,1 @@
+import{w as t,o}from"./chunk-NL6KNZEE-CfxFt-pq.js";const e=t(function(){return o.jsxs(o.Fragment,{children:[o.jsx("div",{className:"font-noto text-2xl ",children:"這是About (Noto Sans TC)"}),o.jsx("div",{className:"font-roboto text-2xl",children:"這是About (Roboto)"})]})});export{e as default};
