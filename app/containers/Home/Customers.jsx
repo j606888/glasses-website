@@ -31,7 +31,7 @@ export default function Customers() {
       <div className="flex justify-center max-w-7xl mx-auto gap-4 md:gap-6 flex-col md:flex-row md:flex-wrap xl:flex-nowrap">
         {customers.map(customer => (
           <div className="flex flex-col items-center rounded-sm shadow-[0_2px_6px_#00000029] md:w-[calc(50%-12px)]">
-            <img src={`/${customer.image}`} alt={customer.name} className="w-full h-[306px] object-cover" />
+            <img src={`./${customer.image}`} alt={customer.name} className="w-full h-[306px] object-cover" />
             <div className="p-4 h-[205px] flex flex-col w-full">
               <h3 className="text-base font-medium mb-2">{customer.name}</h3>
               <p className="text-sm leading-6">{customer.content}</p>

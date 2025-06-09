@@ -19,10 +19,10 @@ export default function CoBranding() {
         {series.map(series => (
           <div key={series.title} className="flex flex-col items-center">
             <picture>
-              <source media="(min-width: 768px)" srcSet={`/${series.image}`} />
-              <source media="(max-width: 767px)" srcSet={`/${series.mobileImage}`} />
+              <source media="(min-width: 768px)" srcSet={`./${series.image}`} />
+              <source media="(max-width: 767px)" srcSet={`./${series.mobileImage}`} />
               <img 
-                src={`/${series.image}`} 
+                src={`./${series.image}`} 
                 alt={series.title} 
                 className="w-full" 
               />

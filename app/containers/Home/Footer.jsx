@@ -1,14 +1,14 @@
 const socials = [
   {
-    image: '/ic-social-fb.png',
+    image: './ic-social-fb.png',
     alt: 'facebook',
   },
   {
-    image: '/ic_social_ig.png',
+    image: './ic_social_ig.png',
     alt: 'instagram',
   },
   {
-    image: '/ic_social_line.png',
+    image: './ic_social_line.png',
     alt: 'line',
   }
 ]
@@ -32,11 +32,11 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex items-center gap-3 md:gap-5 mb-2 font-noto">
-          <img src="/ic_outline-phone.png" className="w-4.5 h-4.5 md:w-9 md:h-9 text-white" />
+          <img src="./ic_outline-phone.png" className="w-4.5 h-4.5 md:w-9 md:h-9 text-white" />
           <p className="text-base md:text-4xl">0800-000-00</p>
         </div>
         <div className="flex items-center gap-3 md:gap-5 mb-6 md:mb-8 font-noto">
-          <img src="/ic_outline-email.png" className="w-4.5 h-4.5 md:w-9 md:h-9 text-white" />
+          <img src="./ic_outline-email.png" className="w-4.5 h-4.5 md:w-9 md:h-9 text-white" />
           <p className="text-base md:text-4xl">glasses@business.co</p>
         </div>
         <hr className='mb-4 md:mb-8' />

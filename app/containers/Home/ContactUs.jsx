@@ -42,7 +42,7 @@ export default function ContactUs() {
           <div>
             <input type="checkbox" id="privacy" name="privacy" className="mr-2 hidden" />
             <label htmlFor="privacy" className="flex items-start cursor-pointer">
-              <img src="/checkbox.svg" alt="checkbox" className="w-6 h-6 mr-2" />
+              <img src="./checkbox.svg" alt="checkbox" className="w-6 h-6 mr-2" />
               我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
             </label>
           </div>
