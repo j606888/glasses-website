@@ -21,7 +21,7 @@ export default function ContactUs() {
       <h2 className="text-center text-5xl font-bold mb-12 text-[#650300]">
         聯絡我們
       </h2>
-      <div className=" max-w-[636px] mx-auto">
+      <div className=" max-w-[636px] mx-auto md:max-w-[576px]">
         <p className="text-xl mb-6">
           我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。
         </p>
@@ -40,14 +40,15 @@ export default function ContactUs() {
             />
           </div>
           <div>
-            <input type="checkbox" id="privacy" name="privacy" className="mr-2"/>
-            <label htmlFor="privacy">
+            <input type="checkbox" id="privacy" name="privacy" className="mr-2 hidden" />
+            <label htmlFor="privacy" className="flex items-center cursor-pointer">
+              <img src="/checkbox.svg" alt="checkbox" className="w-6 h-6 mr-2" />
               我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
             </label>
           </div>
           <button
             type="submit"
-            className="bg-[#AA0601] text-white p-4 w-[416px] mx-auto mt-9"
+            className="bg-[#AA0601] text-white p-4 w-[416px] mx-auto mt-9 md:w-[336px]"
           >
             確認送出
           </button>

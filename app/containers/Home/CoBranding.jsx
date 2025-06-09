@@ -10,12 +10,12 @@ const series = [
 ]
 export default function CoBranding() {
   return (
-    <section className="py-20 bg-[url('/index-bg.png')] bg-center">
+    <section className="py-20 bg-[url('/index-bg.png')] bg-center md:px-9">
       <h2 className="text-center text-5xl font-bold mb-12 text-white">聯名設計鏡框</h2>
-      <div className="flex justify-center max-w-7xl mx-auto">
+      <div className="flex justify-center max-w-7xl mx-auto md:flex-col md:gap-6">
         {series.map(series => (
           <div className="flex flex-col items-center">
-            <img src={`/${series.image}`} alt={series.title} className="w-[648px]" />
+            <img src={`/${series.image}`} alt={series.title} className="w-[648px] md:w-full" />
             <div className="flex flex-col items-center bg-white py-2 w-full">
               <h3 className="text-5xl font-bold text-[#AA0601] italic">{series.title}</h3>
             </div>

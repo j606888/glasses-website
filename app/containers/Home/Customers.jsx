@@ -26,13 +26,13 @@ const customers = [
 ]
 export default function Customers() {
   return (
-    <section className="py-20">
+    <section className="py-20 md:px-9">
       <h2 className="text-center text-5xl font-bold mb-12 text-[#650300]">顧客推薦</h2>
-      <div className="flex justify-center max-w-7xl mx-auto gap-6">
+      <div className="flex justify-center max-w-7xl mx-auto gap-6 md:flex-wrap">
         {customers.map(customer => (
-          <div className="flex flex-col items-center w-[25%] rounded-sm shadow-[0_2px_6px_#00000029]">
-            <img src={`/${customer.image}`} alt={customer.name} className="w-[306px] h-[306px]" />
-            <div className="p-4 h-[205px] flex flex-col">
+          <div className="flex flex-col items-center w-[25%] rounded-sm shadow-[0_2px_6px_#00000029] md:w-[calc(50%-12px)]">
+            <img src={`/${customer.image}`} alt={customer.name} className="w-[306px] h-[306px] md:w-full" />
+            <div className="p-4 h-[205px] flex flex-col md:w-full">
               <h3 className="text-base font-medium mb-2">{customer.name}</h3>
               <p className="text-sm leading-6">{customer.content}</p>
               <span className="text-sm text-[#707070] mt-auto">{customer.date}</span>

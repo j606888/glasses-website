@@ -1,6 +1,20 @@
+const socials = [
+  {
+    image: '/ic-social-fb.png',
+    alt: 'facebook',
+  },
+  {
+    image: '/ic_social_ig.png',
+    alt: 'instagram',
+  },
+  {
+    image: '/ic_social_line.png',
+    alt: 'line',
+  }
+]
 export default function Footer() {
   return (
-    <footer className="bg-[#AA0601] pt-12 pb-8">
+    <footer className="bg-[#AA0601] pt-12 pb-8 md:px-9">
       <div className="flex justify-center flex-col max-w-7xl mx-auto text-white">
         <div className="flex justify-between w-full items-center mb-6">
           <div className="flex gap-12">
@@ -10,10 +24,10 @@ export default function Footer() {
             <a href="/">部落格</a>
             <a href="/">常見問題</a>
           </div>
-          <div className="flex gap-8">
-            <img src="/ic-social-fb.png" alt="facebook" className="w-12 h-12" />
-            <img src="/ic_social_ig.png" alt="instagram" className="w-12 h-12" />
-            <img src="/ic_social_line.png" alt="line" className="w-12 h-12" />
+          <div className="flex gap-8 md:gap-4">
+            {socials.map(social => (
+              <img src={social.image} alt={social.alt} className="w-12 h-12 md:w-10 md:h-10" key={social.alt} />
+            ))}
           </div>
         </div>
         <div className="flex items-center gap-5 mb-2 font-noto">
